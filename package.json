@@ -1,0 +1,28 @@
+{
+  "name": "anim_scroll",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --config webpack.config.js",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikon5070/anim_scroll.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nikon5070/anim_scroll/issues"
+  },
+  "homepage": "https://github.com/Nikon5070/anim_scroll#readme",
+  "devDependencies": {
+    "jshint": "^2.9.5",
+    "jshint-loader": "^0.8.4",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14"
+  }
+}
