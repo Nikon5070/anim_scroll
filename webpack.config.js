@@ -20,6 +20,17 @@ let conf = {
             './js/app.js',
             './scss/style.scss'
         ],
+        index: [
+           './scss/index.scss' 
+        ]
+        // header: [
+        //     './js/header.js',
+        //     './scss/header.scss'
+        // ],
+        // footer: [
+        //     './js/footer.js',
+        //     './scss/footer.scss'
+        // ]
     },
 
     output: {
@@ -29,7 +40,7 @@ let conf = {
     },
 
     devServer: {
-        contentBase: '/dist'
+        contentBase: './'
     },
 
 
@@ -87,12 +98,12 @@ let conf = {
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            inject: false,
-            hash: true,
-            template: './index.html',
-            filename: 'index.html'
-        }),
+        // new HtmlWebpackPlugin({
+        //     inject: false,
+        //     hash: true,
+        //     template: './index.html',
+        //     filename: 'index.html'
+        // }),
         new ExtractTextPlugin(
             './css/[name].css'
         ),
