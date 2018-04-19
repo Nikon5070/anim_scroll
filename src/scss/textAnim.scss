@@ -1,0 +1,23 @@
+.text-animation {
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    li {
+        display: inline-block;
+        margin-right: 5px;
+        font-family: sans-serif;
+        font-weight: 300;
+        font-size: 5em;
+        color: #70e1e2;
+        opacity: 1;
+        transition: all 2.5s ease;
+    }
+    li:last-child {
+        margin-right: 0;
+    }
+    .hidden {
+        opacity: 0;
+    }
+}

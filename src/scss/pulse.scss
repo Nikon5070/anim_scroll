@@ -1,0 +1,54 @@
+.pulse__effect {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.pulse__effect:hover{
+    cursor: pointer;
+}
+.wave, .wave2{
+    height: 100px;
+    width: 100px;
+    background-color: silver;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+@keyframes pulseEffect {
+    from{
+        transform: translate(-50%,-50%) scale(0.5);
+    }
+    to{
+        transform: translate(-50%,-50%) scale(3);
+        opacity: 0;
+    }
+}
+
+@keyframes pulseEffect {
+    from{
+        transform: translate(-50%,-50%) scale(0);
+        opacity: 0.6;
+    }
+    to{
+        transform: translate(-50%,-50%) scale(2);
+        opacity: 0;
+    }
+}
+
+.pulse__effect:hover ~ .wave {
+    animation: pulseEffect 2s infinite linear;
+}
+
+.pulse__effect:hover ~ .wave {
+    animation: pulseEffect2 2s infinite linear;
+}
